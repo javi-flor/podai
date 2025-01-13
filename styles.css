@@ -1,0 +1,179 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1200px; /* Añadido para limitar el tamaño del banner */
+    height: auto;
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Centrado y extensión del header */
+    padding: 20px;
+}
+
+.header-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.date {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Estilos para el main */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Asegura que el contenido no se extienda demasiado */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Titulo principal */
+.title-section h1 {
+    background-color: #ffd700;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+/* Información del alumno */
+.student-info p {
+    margin: 5px 0;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Tabla de calificaciones */
+.grades {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grades table {
+    width: 100%;
+    max-width: 1100px; /* Limita el ancho de la tabla */
+    border-collapse: collapse;
+    font-size: 18px; /* Aumenta el tamaño de fuente */
+}
+
+.grades th, .grades td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.grades th {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Botones de acción */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Mayor tamaño para los botones */
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Notas y aclaraciones */
+.notes {
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query para hacer el diseño responsive */
+@media (max-width: 1024px) {
+    main {
+        padding: 15px;
+        width: 90%; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+
+    .grades table {
+        font-size: 14px;
+    }
+
+    .header-info p, .student-info p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header-info p, .student-info p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .grades table {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
